@@ -1,7 +1,13 @@
-FROM eclipse-temurin:17-jre-alpine
+
+FROM eclipse-temurin:17-jdk-alpine
 
 WORKDIR /app
 
-COPY Hello.java /app
-#RUN  ["javac","Hello.java"]
+
+COPY Hello.java .
+
+
+RUN javac Hello.java
+
+
 CMD ["java", "Hello"]
