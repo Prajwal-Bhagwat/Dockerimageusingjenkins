@@ -6,7 +6,6 @@ pipeline {
             steps {
                 sh 'javac Hello.java'
                 
-                sh 'cp Hello.class .'
             }
         }
 
