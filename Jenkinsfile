@@ -18,7 +18,7 @@ pipeline {
         stage(' Run & Verify') {
             steps {
                 
-                sh 'docker run --name my-app-containernew my-app'
+                sh 'docker run --name my-app-containernew1 my-app'
             }
         }
     }
